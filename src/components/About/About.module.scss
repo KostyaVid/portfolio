@@ -1,0 +1,37 @@
+.about {
+	margin-top: 23rem;
+	@media (max-width: 768px) {
+		margin-top: 16rem;
+	}
+}
+
+.imageContainer {
+	position: relative;
+	padding-bottom: 100%;
+	width: 100%;
+	clip-path: polygon(0 0, 100% 0, 100% 90%, 0% 100%);
+	@media (max-width: 768px) {
+		clip-path: none;
+	}
+}
+.photo {
+	filter: grayscale(90%);
+	-webkit-filter: grayscale(90%);
+}
+
+.linkCV {
+	display: block;
+	width: max-content;
+	margin-top: 3rem;
+	border-radius: var(--border-radius);
+	color: var(--color-third);
+	background-color: var(--color-primary);
+	padding: 1rem 1.5rem;
+	@media (max-width: 996px) {
+		margin-top: 1.5rem;
+	}
+	@media (max-width: 768px) {
+		text-align: center;
+		width: 80%;
+	}
+}

@@ -1,0 +1,26 @@
+{
+  "name": "Portfolio",
+  "short_name": "Portfolio by Konstantin Vidyakin",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#fbfbfb",
+  "theme_color": "#fbfbfb",
+  "orientation": "portrait-primary",
+  "icons": [
+    {
+      "src": "/favicon.ico",
+      "type": "image/x-icon",
+      "sizes": "32x32"
+    },
+    {
+      "src": "/favicon_64.png",
+      "type": "image/png",
+      "sizes": "64x64"
+    },
+    {
+      "src": "/favicon_128.png",
+      "type": "image/png",
+      "sizes": "128x128"
+    }
+  ]
+}

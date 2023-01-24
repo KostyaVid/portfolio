@@ -1,0 +1,86 @@
+.progress {
+	width: 100px;
+	height: 100px;
+	border-radius: 50%;
+	background-color: var(--color-primary);
+	position: relative;
+	overflow: hidden;
+}
+.progress::before {
+	content: "";
+	display: block;
+	position: absolute;
+	top: 15px;
+	left: 15px;
+	right: 15px;
+	bottom: 15px;
+	border-radius: 50%;
+	background-color: var(--color-background);
+	z-index: 3;
+	opacity: 1;
+}
+.piece {
+	width: 100%;
+	height: 100%;
+	left: 0;
+	right: 0;
+	overflow: hidden;
+	position: absolute;
+}
+.piece::before {
+	content: "";
+	display: block;
+	position: absolute;
+	width: 50%;
+	height: 100%;
+}
+.left {
+	transform: rotate(0deg);
+	z-index: 2;
+	border-radius: 50%; /* only FireFox < 75.0v (fix bug)*/
+}
+.over_50 .left {
+	transform: rotate(180deg);
+}
+.right {
+	transform: rotate(180deg);
+	z-index: 1;
+	border-radius: 50%; /* only FireFox < 75.0v (fix bug)*/
+}
+.over_50 .right {
+	transform: rotate(360deg);
+}
+.left::before {
+	background-color: var(--color-label);
+}
+.over_50 .left::before {
+	background-color: var(--color-primary);
+}
+.right::before {
+	background-color: var(--color-label);
+}
+.textContainer {
+	position: absolute;
+	z-index: 3;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	text-align: center;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.textContainer b {
+	color: var(--color-label);
+	font-size: 1rem;
+	font-weight: 600;
+	display: block;
+}
+.caption {
+	margin-top: 0.5rem;
+	color: var(--color-primary);
+	font-size: 0.9rem;
+	font-weight: 600;
+	text-align: center;
+}
