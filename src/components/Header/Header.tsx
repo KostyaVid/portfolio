@@ -7,11 +7,11 @@ import Image from "next/image";
 type TopLink = { id: number; name: string; url: string };
 
 const links: TopLink[] = [
-	{ id: 0, name: "Home", url: "/#homeID" },
-	{ id: 1, name: "About", url: "/#aboutID" },
-	{ id: 2, name: "Skills", url: "/#skillsID" },
-	{ id: 3, name: "Works", url: "/#worksID" },
-	{ id: 4, name: "Contact", url: "/#contactID" },
+	{ id: 0, name: "Home", url: "/#HomeID" },
+	{ id: 1, name: "About", url: "/#AboutID" },
+	{ id: 2, name: "Skills", url: "/#SkillsID" },
+	{ id: 3, name: "Works", url: "/#WorksID" },
+	{ id: 4, name: "Contact", url: "/#ContactID" },
 ];
 
 const Header: FC = () => {
@@ -37,9 +37,7 @@ const Header: FC = () => {
 		const operateFocused = (e: KeyboardEvent) => {
 			if (e.key === "Tab") {
 				const focuses = Array.from(
-					document.querySelectorAll<HTMLElement>(
-						"[data-focused-menu]"
-					)
+					document.querySelectorAll<HTMLElement>("[data-focused-menu]")
 				);
 				e.preventDefault();
 				if (e.shiftKey) {
@@ -67,12 +65,13 @@ const Header: FC = () => {
 	}, [isMobile, menuActive]);
 
 	return (
-		<header className={"container " + s.header} id="#homeID">
+		<header className={"container " + s.header} id="#HomeID">
 			<Image
 				className={s.clacks}
 				width={180}
 				height={134}
-				src="/img/clacks.png"
+				priority
+				src="/img/clacks.webp"
 				alt=""
 			/>
 			<nav

@@ -1,5 +1,22 @@
 .skills {
 	margin-top: 10rem;
+	position: relative;
+}
+.background{
+	position: absolute;
+	top: -33rem;
+	right: 0;
+	height: 90rem;
+	width: 100%;
+	background-image: url("/img/background_skills.webp");
+	background-position: 100% 100%;
+	background-repeat: no-repeat;
+	background-size: contain;
+	z-index: -1;
+	@media (max-width: 768px) {
+		background-size: cover;
+		height: 1200px;
+	}
 }
 .imageContainer {
 	position: relative;
@@ -16,14 +33,14 @@
 	-webkit-filter: grayscale(90%);
 }
 .itemsContainer {
-	margin-top: 3rem;
+	margin-top: 2rem;
 	display: flex;
 	align-items: center;
 	justify-content: center;
 	flex-wrap: wrap;
-	gap: 2.5rem;
+	gap: 2rem;
 	@media (max-width: 996px) {
-		gap:1.5rem;
+		gap:1rem;
 	}
 	@media (max-width: 768px) {
 		margin-top: 2rem;

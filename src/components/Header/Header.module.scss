@@ -79,7 +79,10 @@
 .link {
 	color: inherit;
 	font-weight: 500;
-	font-size: 1.5rem;
+	font-size: 2rem;
+	@media (max-width: 1441px) {
+		font-size: 1.5rem;
+	}
 }
 
 .openMenuLink {

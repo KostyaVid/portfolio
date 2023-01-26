@@ -7,6 +7,7 @@ import Hero from "@/src/components/Hero/Hero";
 import Footer from "@/src/components/Footer/Footer";
 import About from "@/src/components/About/About";
 import Skills from "@/src/components/Skills/Skills";
+import Works from "@/src/components/Works/Works";
 
 const spartan = League_Spartan({ subsets: ["latin"] });
 
@@ -33,6 +34,7 @@ export default function Home() {
 					<Hero />
 					<About />
 					<Skills/>
+					<Works/>
 				</main>
 				<Footer />
 			</div>

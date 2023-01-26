@@ -12,23 +12,22 @@ const About = () => {
 						className={s.photo}
 						alt="Konstantin Vidyakin"
 						src="/img/I.webp"
-						priority
 						fill
 						sizes="(max-width: 768px) 100vw, (max-width: 996px) 45vw, 40vw"
 					/>
 					<div aria-hidden className="blueFilter"></div>
 				</div>
 				<div className="containerText">
-					<h2 id="aboutID" className={s.title}>
+					<h2 id="AboutID" className={s.title}>
 						About me
 					</h2>
 					<p>
-						An inquisitive Front-end developer, skilled in
-						leadership, seeking to leverage solid development skills
-						with focus on quality, security and availability.
+						An inquisitive Front-end developer, skilled in leadership, seeking
+						to leverage solid development skills with focus on quality, security
+						and availability.
 					</p>
 					<Link
-						className={s.linkCV}
+						className="linkCV"
 						href="https://career.habr.com/constat"
 						target="_blank"
 					>

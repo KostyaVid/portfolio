@@ -1,0 +1,12 @@
+.labelContainer {
+	background-color: var(--color-label);
+	border-radius: var(--border-radius);
+	padding: 0.5rem 0.8rem;
+	display: inline-block;
+}
+
+.text {
+	color: var(--color-third);
+	font-size: 1rem;
+	cursor: default;
+}

@@ -1,23 +1,41 @@
 .progress {
-	width: 100px;
-	height: 100px;
+	width: 8rem;
+	height: 8rem;
 	border-radius: 50%;
 	background-color: var(--color-primary);
 	position: relative;
 	overflow: hidden;
+	@media (max-width: 1440px) {
+		width: 6rem;
+		height: 6rem;
+	}
+	@media (max-width: 996px) {
+		width: 5rem;
+		height: 5rem;
+	}
+	@media (max-width: 768px) {
+		width: 6rem;
+		height: 6rem;
+	}
 }
 .progress::before {
 	content: "";
 	display: block;
 	position: absolute;
-	top: 15px;
-	left: 15px;
-	right: 15px;
-	bottom: 15px;
+	top: 1.3rem;
+	left: 1.3rem;
+	right: 1.3rem;
+	bottom: 1.3rem;
 	border-radius: 50%;
 	background-color: var(--color-background);
 	z-index: 3;
 	opacity: 1;
+	@media (max-width: 1440px) {
+		top: 1rem;
+		left: 1rem;
+		right: 1rem;
+		bottom: 1rem;
+	}
 }
 .piece {
 	width: 100%;
@@ -73,14 +91,20 @@
 }
 .textContainer b {
 	color: var(--color-label);
-	font-size: 1rem;
+	font-size: 1.3rem;
 	font-weight: 600;
 	display: block;
+	@media (max-width: 1440px) {
+		font-size:1rem;
+	}
 }
 .caption {
-	margin-top: 0.5rem;
+	margin-top: 1rem;
 	color: var(--color-primary);
-	font-size: 0.9rem;
+	font-size: 1.3rem;
 	font-weight: 600;
 	text-align: center;
+	@media (max-width: 1440px) {
+		margin-top: 0.5rem;
+	}
 }

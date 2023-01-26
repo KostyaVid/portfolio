@@ -18,20 +18,3 @@
 	filter: grayscale(90%);
 	-webkit-filter: grayscale(90%);
 }
-
-.linkCV {
-	display: block;
-	width: max-content;
-	margin-top: 3rem;
-	border-radius: var(--border-radius);
-	color: var(--color-third);
-	background-color: var(--color-primary);
-	padding: 1rem 1.5rem;
-	@media (max-width: 996px) {
-		margin-top: 1.5rem;
-	}
-	@media (max-width: 768px) {
-		text-align: center;
-		width: 80%;
-	}
-}
