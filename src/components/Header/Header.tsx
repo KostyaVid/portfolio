@@ -102,6 +102,16 @@ const Header: FC = () => {
 								})}
 								data-focused-menu
 								tabIndex={0}
+								onClick={(e) => {
+									const linkElem = document.querySelector(link.url.slice(1));
+									if (linkElem?.scrollIntoView) {
+										e.preventDefault();
+										linkElem.scrollIntoView({
+											behavior: "smooth",
+											block: "start",
+										});
+									}
+								}}
 							>
 								{link.name}
 							</Link>
