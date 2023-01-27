@@ -16,14 +16,17 @@ export default function Home() {
 		<>
 			<Head>
 				<title>Portfolio - Konstantin Vidyakin</title>
+				<meta name="description" content="Portfolio by Konstantin Vidyakin" />
+				<meta property="og:title" content="KostyaVid - Portfolio" />
 				<meta
-					name="description"
+					property="og:description"
 					content="Portfolio by Konstantin Vidyakin"
 				/>
-				<meta
-					name="viewport"
-					content="width=device-width, initial-scale=1"
-				/>
+				<meta property="og:type" content="website" />
+				<meta property="og:locale" content="en_EN" />
+				<meta property="og:url" content="" />
+				<meta property="og:image" content="/img/OG.png" />
+				<meta name="viewport" content="width=device-width, initial-scale=1" />
 				<link rel="manifest" href="/manifest.json" />
 				<link rel="icon" href="/favicon.ico" />
 			</Head>
@@ -33,8 +36,8 @@ export default function Home() {
 				<main>
 					<Hero />
 					<About />
-					<Skills/>
-					<Works/>
+					<Skills />
+					<Works />
 				</main>
 				<Footer />
 			</div>

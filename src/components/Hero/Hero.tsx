@@ -18,7 +18,6 @@ const Hero = () => {
 						alt="Telegrem"
 					/>
 				</Link>
-
 				<Link href="https://github.com/KostyaVid" aria-label="GitHub">
 					<Image
 						src="img/icons/github.svg"

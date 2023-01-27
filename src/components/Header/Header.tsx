@@ -1,4 +1,11 @@
-import React, { FC, useCallback, useEffect, useRef, useState } from "react";
+import React, {
+	FC,
+	useCallback,
+	useEffect,
+	useLayoutEffect,
+	useRef,
+	useState,
+} from "react";
 import cn from "classnames";
 import s from "./Header.module.scss";
 import Link from "next/link";
@@ -11,13 +18,20 @@ const links: TopLink[] = [
 	{ id: 1, name: "About", url: "/#AboutID" },
 	{ id: 2, name: "Skills", url: "/#SkillsID" },
 	{ id: 3, name: "Works", url: "/#WorksID" },
-	{ id: 4, name: "Contact", url: "/#ContactID" },
 ];
 
 const Header: FC = () => {
 	const [menuActive, setMenuActive] = useState(false);
 	const [isMobile, setIsMobile] = useState(globalThis.innerWidth < 769);
 	const menuRef = useRef<HTMLUListElement | null>(null);
+
+	useLayoutEffect(() => {
+		if (menuActive && isMobile) {
+			document.querySelector("html")?.classList.add("scroll_hidden");
+		} else {
+			document.querySelector("html")?.classList.remove("scroll_hidden");
+		}
+	}, [menuActive, isMobile]);
 
 	const handleClickOverlay = useCallback(() => {
 		if (isMobile) setMenuActive(false);

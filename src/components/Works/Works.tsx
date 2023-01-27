@@ -30,7 +30,7 @@ const Works = () => {
 				<SwiperSlide>
 					<Card
 						img="/img/shiba.webp"
-						title="Spider ShubaInu"
+						title="SpiderShiba Inu"
 						description="Competitive layout of a website dedicated to NFT tokens."
 						urlWebsite="https://spider-shiba-inu.vercel.app/"
 						labels={[
