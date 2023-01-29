@@ -7,5 +7,5 @@ This is my portfolio
 
 I am Konstantin Vidakin (KostyaVid). I'm react frontend developer.
 
-[Please, visit portfolio website] https://portfolio-xi-six-88.vercel.app/
+[Please, visit portfolio website](https://portfolio-xi-six-88.vercel.app/)
 
