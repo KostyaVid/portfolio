@@ -21,10 +21,10 @@ export default function Home() {
 			<Head>
 				<title>Portfolio - Konstantin Vidyakin</title>
 				<meta name="description" content="Portfolio by Konstantin Vidyakin" />
-				<meta property="og:title" content="KostyaVid - Portfolio" />
+				<meta property="og:title" content="Portfolio by Konstantin Vidyakin" />
 				<meta
 					property="og:description"
-					content="Portfolio by Konstantin Vidyakin"
+					content="Portfolio of a react developer with completed examples of sites. By Konstantin Vidyakin"
 				/>
 				<meta property="og:type" content="website" />
 				<meta property="og:locale" content="en_EN" />
