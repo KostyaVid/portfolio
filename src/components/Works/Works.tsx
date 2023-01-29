@@ -7,17 +7,28 @@ import "swiper/scss/pagination";
 import "swiper/css/effect-fade";
 import s from "./Works.module.scss";
 import { PaginationOptions } from "swiper/types";
+import gsap from "gsap";
 
 const Works = () => {
 	const [swiperRef, setSwiperRef] = useState<any | null>(null);
+	const timeLine = gsap.timeline();
+	let activeButton = true;
 	const handleClickNext = () => {
-		swiperRef.slideNext(1000);
+		if (activeButton) {
+			timeLine.to(".Arrows", { x: 60 }).fromTo(".Arrows", { x: -60 }, { x: 0 });
+			swiperRef.slideNext(1000);
+			activeButton = false;
+			setTimeout(() => {
+				activeButton = true;
+			}, 1000);
+		}
 	};
 	const pagination: PaginationOptions = {
 		clickable: true,
 	};
 	return (
 		<section id="WorksID" className={"container " + s.works}>
+		<div className={s.background} aria-hidden></div>
 			<Swiper
 				onSwiper={setSwiperRef}
 				pagination={pagination}
@@ -29,7 +40,7 @@ const Works = () => {
 			>
 				<SwiperSlide>
 					<Card
-						img="/img/shiba.webp"
+						img="/img/inu.webp"
 						title="SpiderShiba Inu"
 						description="Competitive layout of a website dedicated to NFT tokens."
 						urlWebsite="https://spider-shiba-inu.vercel.app/"
@@ -43,7 +54,7 @@ const Works = () => {
 				</SwiperSlide>
 				<SwiperSlide>
 					<Card
-						img="/img/krepair.webp"
+						img="/img/krep.webp"
 						title="KRepair"
 						description="Multi-page website of the service center for the repair of equipment."
 						urlWebsite="https://kr-epair.vercel.app/home"

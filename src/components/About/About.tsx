@@ -7,16 +7,16 @@ const About = () => {
 	return (
 		<section className={"container " + s.about}>
 			<div className="sectionContainer">
-				<div className={s.imageContainer}>
-					<Image
-						className={s.photo}
-						alt="Konstantin Vidyakin"
-						src="/img/I.webp"
-						fill
-						sizes="(max-width: 768px) 100vw, (max-width: 996px) 45vw, 40vw"
-					/>
-					<div aria-hidden className="blueFilter"></div>
-				</div>
+					<div className={s.imageContainer}>
+						<Image
+							className={s.photo}
+							alt="Konstantin Vidyakin"
+							src="/img/I.webp"
+							fill
+							sizes="(max-width: 768px) 100vw, (max-width: 996px) 45vw, 40vw"
+						/>
+						<div aria-hidden className="blueFilter"></div>
+					</div>
 				<div className="containerText">
 					<h2 id="AboutID" className={s.title}>
 						About me
@@ -28,7 +28,7 @@ const About = () => {
 					</p>
 					<Link
 						className="linkCV"
-						href="https://career.habr.com/constat"
+						href="https://hh.ru/resume/22b0c643ff0b685c200039ed1f763867596862"
 						target="_blank"
 					>
 						Go to CV

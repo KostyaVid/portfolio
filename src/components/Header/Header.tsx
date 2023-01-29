@@ -1,11 +1,4 @@
-import React, {
-	FC,
-	useCallback,
-	useEffect,
-	useLayoutEffect,
-	useRef,
-	useState,
-} from "react";
+import React, { FC, useCallback, useEffect, useRef, useState } from "react";
 import cn from "classnames";
 import s from "./Header.module.scss";
 import Link from "next/link";
@@ -25,7 +18,7 @@ const Header: FC = () => {
 	const [isMobile, setIsMobile] = useState(globalThis.innerWidth < 769);
 	const menuRef = useRef<HTMLUListElement | null>(null);
 
-	useLayoutEffect(() => {
+	useEffect(() => {
 		if (menuActive && isMobile) {
 			document.querySelector("html")?.classList.add("scroll_hidden");
 		} else {

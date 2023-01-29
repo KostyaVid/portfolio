@@ -8,10 +8,14 @@ import Footer from "@/src/components/Footer/Footer";
 import About from "@/src/components/About/About";
 import Skills from "@/src/components/Skills/Skills";
 import Works from "@/src/components/Works/Works";
+import gsap from "gsap";
+import ScrollTrigger from "gsap/ScrollTrigger";
+import TextPlugin from "gsap/TextPlugin";
 
 const spartan = League_Spartan({ subsets: ["latin"] });
 
 export default function Home() {
+	gsap.registerPlugin(ScrollTrigger,TextPlugin)
 	return (
 		<>
 			<Head>

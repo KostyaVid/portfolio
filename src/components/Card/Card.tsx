@@ -36,6 +36,7 @@ const Card: React.FC<CardProps> = ({
 					<div aria-hidden className="blueFilter"></div>
 					<button className={s.nextSlide} aria-label="To next work" onClick={onClickNext}>
 						<svg
+							className="Arrows"
 							width="24"
 							height="18"
 							viewBox="0 0 24 18"
