@@ -15,7 +15,7 @@ import TextPlugin from "gsap/TextPlugin";
 const spartan = League_Spartan({ subsets: ["latin"] });
 
 export default function Home() {
-	gsap.registerPlugin(ScrollTrigger,TextPlugin)
+	gsap.registerPlugin(ScrollTrigger, TextPlugin);
 	return (
 		<>
 			<Head>
@@ -28,7 +28,10 @@ export default function Home() {
 				/>
 				<meta property="og:type" content="website" />
 				<meta property="og:locale" content="en_EN" />
-				<meta property="og:url" content="" />
+				<meta
+					property="og:url"
+					content="https://portfolio-xi-six-88.vercel.app"
+				/>
 				<meta property="og:image" content="/img/OG.png" />
 				<meta name="viewport" content="width=device-width, initial-scale=1" />
 				<link rel="manifest" href="/manifest.json" />
