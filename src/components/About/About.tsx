@@ -12,6 +12,7 @@ const About = () => {
 							className={s.photo}
 							alt="Konstantin Vidyakin"
 							src="/img/I.webp"
+							priority
 							fill
 							sizes="(max-width: 768px) 100vw, (max-width: 996px) 45vw, 40vw"
 						/>
