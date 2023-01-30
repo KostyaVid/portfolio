@@ -3,7 +3,7 @@
   "short_name": "Portfolio by Konstantin Vidyakin",
   "start_url": "/",
   "display": "standalone",
-  "background_color": "#fbfbfb",
+  "background_color": "#000c24",
   "theme_color": "#000c24",
   "orientation": "portrait-primary",
   "icons": [
