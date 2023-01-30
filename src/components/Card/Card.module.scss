@@ -1,7 +1,6 @@
-.card{
-	padding-top: 1rem;
-	padding-bottom: 2rem;
-	@media(max-width:768px){
+.card {
+	padding: 1rem 0.8rem 2rem 0.8rem;
+	@media (max-width: 768px) {
 		padding-bottom: 3rem;
 	}
 }
