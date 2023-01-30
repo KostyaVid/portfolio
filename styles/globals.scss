@@ -72,7 +72,7 @@ a {
 	color: inherit;
 	text-decoration: none;
 	&:focus {
-		outline: var(--color-secondary) 1px solid;
+		outline: var(--color-label) 1px solid;
 	}
 }
 
@@ -87,7 +87,7 @@ button {
 	cursor: pointer;
 	border: none;
 	&:focus {
-		outline: var(--color-secondary) 2px solid;
+		outline: var(--color-label) 2px solid;
 	}
 }
 
