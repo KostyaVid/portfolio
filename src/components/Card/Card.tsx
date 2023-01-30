@@ -26,14 +26,13 @@ const Card: React.FC<CardProps> = ({
 			<div className="sectionContainer">
 				<div className={s.imageContainer}>
 					<Image
-						className={s.photo}
+						className="imageMain"
 						alt={title}
 						src={img}
 						priority
 						fill
 						sizes="(max-width: 768px) 100vw, (max-width: 996px) 45vw, 40vw"
 					/>
-					<div aria-hidden className="blueFilter"></div>
 					<button className={s.nextSlide} aria-label="To next work" onClick={onClickNext}>
 						<svg
 							className="Arrows"
@@ -51,9 +50,9 @@ const Card: React.FC<CardProps> = ({
 					</button>
 				</div>
 				<div className={"containerText " + s.containerText}>
-					<h2 className={s.title}>
+					<h3 className={s.title}>
 						{title}
-					</h2>
+					</h3>
 					<p>{description}</p>
 					<div className={s.labels}>
 						{labels.map((label, ind) => (

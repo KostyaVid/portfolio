@@ -5,12 +5,11 @@
 
 .background{
 	position: absolute;
-	top: -9rem;
+	top: -2rem;
 	left: 0;
 	height: 12rem;
 	width: 100%;
 	background-image: url("/img/background_works.webp");
-	background-position: 0 100%;
 	background-repeat: no-repeat;
 	background-size: contain;
 	z-index: -1;
@@ -19,7 +18,15 @@
 		width: 30%;
 		top: -5rem;
 		left:0;
-		height: 8rem;
+		height: auto;
+		padding-top: 35%;
 	}
 }
 
+.title{
+	text-align: center;
+	margin-bottom: 5rem;
+	@media (max-width: 768px) {
+		margin-bottom: 3rem;
+	}
+}

@@ -29,6 +29,7 @@ const Works = () => {
 	return (
 		<section id="WorksID" className={"container " + s.works}>
 		<div className={s.background} aria-hidden></div>
+		<h2 className={s.title}>Works</h2>
 			<Swiper
 				onSwiper={setSwiperRef}
 				pagination={pagination}
@@ -36,7 +37,6 @@ const Works = () => {
 				effect={"fade"}
 				fadeEffect={{ crossFade: true }}
 				modules={[EffectFade, Pagination]}
-				className="mySwiper"
 			>
 				<SwiperSlide>
 					<Card

@@ -35,14 +35,13 @@ const Skills = () => {
 				</div>
 				<div className={s.imageContainer}>
 					<Image
-						className={s.photo}
+						className="imageMain"
 						alt="Laptop"
 						src="/img/laptop.webp"
 						priority
 						fill
 						sizes="(max-width: 768px) 100vw, (max-width: 996px) 45vw, 40vw"
 					/>
-					<div aria-hidden className="blueFilter"></div>
 				</div>
 			</div>
 		</section>

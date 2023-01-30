@@ -9,14 +9,13 @@ const About = () => {
 			<div className="sectionContainer">
 					<div className={s.imageContainer}>
 						<Image
-							className={s.photo}
+							className="imageMain"
 							alt="Konstantin Vidyakin"
 							src="/img/I.webp"
 							priority
 							fill
 							sizes="(max-width: 768px) 100vw, (max-width: 996px) 45vw, 40vw"
 						/>
-						<div aria-hidden className="blueFilter"></div>
 					</div>
 				<div className="containerText">
 					<h2 id="AboutID" className={s.title}>

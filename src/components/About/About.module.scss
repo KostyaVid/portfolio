@@ -9,12 +9,4 @@
 	position: relative;
 	padding-bottom: 100%;
 	width: 100%;
-	clip-path: polygon(0 0, 100% 0, 100% 90%, 0% 100%);
-	@media (max-width: 768px) {
-		clip-path: none;
-	}
-}
-.photo {
-	filter: grayscale(90%);
-	-webkit-filter: grayscale(90%);
 }
