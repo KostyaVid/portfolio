@@ -1,65 +1,68 @@
 .hero {
-	margin-top: 20rem;
-	@media (max-width: 1440px) {
-		margin-top: 9rem;
-	}
-	@media (max-width: 996px) {
-		margin-top: 8rem;
-	}
-	@media (max-width: 768px) {
-		margin-top: 8rem;
-		display: flex;
-		flex-direction: column;
-		align-items: center;
-		justify-content: center;
-	}
+  margin-top: 20rem;
+  @media (max-width: 1440px) {
+    margin-top: 9rem;
+  }
+  @media (max-width: 996px) {
+    margin-top: 8rem;
+  }
+  @media (max-width: 768px) {
+    margin-top: 8rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
 }
 .title {
-	font-weight: 900;
-	color: var(--color-primary);
-	text-shadow: -0 -1px 0 #ffffff, 0 -1px 0 #ffffff, -0 1px 0 #ffffff,
-		0 1px 0 #ffffff, -1px -0 0 #ffffff, 1px -0 0 #ffffff, -1px 0 0 #ffffff,
-		1px 0 0 #ffffff, -1px -1px 0 #ffffff, 1px -1px 0 #ffffff, -1px 1px 0 #ffffff,
-		1px 1px 0 #ffffff, -1px -1px 0 #ffffff, 1px -1px 0 #ffffff,
-		-1px 1px 0 #ffffff, 1px 1px 0 #ffffff;
+  font-weight: 900;
+  color: var(--color-primary);
+  text-shadow: -0 -1px 0 #ffffff, 0 -1px 0 #ffffff, -0 1px 0 #ffffff,
+    0 1px 0 #ffffff, -1px -0 0 #ffffff, 1px -0 0 #ffffff, -1px 0 0 #ffffff,
+    1px 0 0 #ffffff, -1px -1px 0 #ffffff, 1px -1px 0 #ffffff, -1px 1px 0 #ffffff,
+    1px 1px 0 #ffffff, -1px -1px 0 #ffffff, 1px -1px 0 #ffffff,
+    -1px 1px 0 #ffffff, 1px 1px 0 #ffffff;
+  @media (max-width: 576px) {
+    text-align: center;
+  }
 }
 .subtitle {
-	text-shadow: -0 -1px 0 var(--color-primary), 0 -1px 0 var(--color-primary),
-		-0 1px 0 var(--color-primary), 0 1px 0 var(--color-primary),
-		-1px -0 0 var(--color-primary), 1px -0 0 var(--color-primary),
-		-1px 0 0 var(--color-primary), 1px 0 0 var(--color-primary),
-		-1px -1px 0 var(--color-primary), 1px -1px 0 var(--color-primary),
-		-1px 1px 0 var(--color-primary), 1px 1px 0 var(--color-primary),
-		-1px -1px 0 var(--color-primary), 1px -1px 0 var(--color-primary),
-		-1px 1px 0 var(--color-primary), 1px 1px 0 var(--color-primary);
+  text-shadow: -0 -1px 0 var(--color-primary), 0 -1px 0 var(--color-primary),
+    -0 1px 0 var(--color-primary), 0 1px 0 var(--color-primary),
+    -1px -0 0 var(--color-primary), 1px -0 0 var(--color-primary),
+    -1px 0 0 var(--color-primary), 1px 0 0 var(--color-primary),
+    -1px -1px 0 var(--color-primary), 1px -1px 0 var(--color-primary),
+    -1px 1px 0 var(--color-primary), 1px 1px 0 var(--color-primary),
+    -1px -1px 0 var(--color-primary), 1px -1px 0 var(--color-primary),
+    -1px 1px 0 var(--color-primary), 1px 1px 0 var(--color-primary);
 
-	margin-top: 1.5rem;
-	font-size: 2.25rem;
-	font-weight: 600;
-	color: var(--color-third);
-	@media (max-width: 1440px) {
-		margin-top: 1rem;
-		font-size: 1.75rem;
-	}
+  margin-top: 1.5rem;
+  font-size: 2.25rem;
+  font-weight: 600;
+  color: var(--color-third);
+  @media (max-width: 1440px) {
+    margin-top: 1rem;
+    font-size: 1.75rem;
+  }
 }
 .socialLinks {
-	margin-top: 2.5rem;
-	display: flex;
-	align-items: center;
-	justify-content: flex-start;
-	gap: 1.4rem;
-	@media not (prefers-reduced-motion) {
-		a {
-			position: relative;
-			img {
-				transform: rotate(0deg);
-				transition: all 1s cubic-bezier(0.47, 1.64, 0.41, 0.8);
-			}
-		}
-		a:hover {
-			img {
-				transform: rotate(360deg);
-			}
-		}
-	}
+  margin-top: 2.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 1.4rem;
+  @media not (prefers-reduced-motion) {
+    a {
+      position: relative;
+      img {
+        transform: rotate(0deg);
+        transition: all 1s cubic-bezier(0.47, 1.64, 0.41, 0.8);
+      }
+    }
+    a:hover {
+      img {
+        transform: rotate(360deg);
+      }
+    }
+  }
 }
